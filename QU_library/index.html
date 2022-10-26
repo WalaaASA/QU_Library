@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Qassim University Library</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">   
+
+        <style>   
+            html{
+                min-height:100%;
+                background:linear-gradient(0deg, rgba(235, 235, 202, 0.5), rgba(235, 235, 202, 0.9)), url(img/libr5.jpg);
+                background-size:cover;
+                }
+        </style>    
+    </head>
+
+    <body >
+        <h1 >Welcome to QU Library</h1>
+        <div class="centered">
+            <form action="query2.php" method="post">
+                <label for="attr" class="labeltxt">SELECT</label><br>
+                <input type="text" name="attr" style="height:50px; width: 300px;" placeholder="Attributes names saprated by comma" class="input-txt"><br><br>
+                <label for="table" class="labeltxt">FROM</label><br>
+                <input type="text" name="table" style="height:50px; width: 300px;" placeholder="Table name" class="input-txt"><br><br>
+                <label for="cond" class="labeltxt">WHERE</label><br>
+                <textarea type="text" name="cond" style="height:100px; width: 300px;" placeholder="Condition" class="input-txt"></textarea><br><br>
+                <input type="submit" name="submit" value="Go" class="botton btn btn-secondary ">
+            </form>
+        </div>  
+    </body>
+
+</html>
